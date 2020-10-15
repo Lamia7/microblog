@@ -4,6 +4,8 @@ Module contenant routes
 - view function : dans Flask, les gestionnaires des routes d'application sont écrits sous forme de fonctions Python
 - elles sont mappées à une ou pls URL de routage pr que Flask sache quelle logique exécuter qd client demande une URL donnée.
 """
+from flask import render_template
+
 from app import app
 
 
@@ -14,4 +16,5 @@ et en transmettre la valeur de retour au navigateur en tant que réponse."""
 @app.route('/')  # view function with route URL
 @app.route('/index')  # view function with 'index' as route URL
 def index():
-    return "Hello World!"
+    user = {'username': 'Lamia'}
+    return render_template('templates/index.html', title='Accueil', user=user)
