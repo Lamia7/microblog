@@ -1,26 +1,15 @@
 # Microblog using Flask
 
-## Créer répertoire
+### Installation and configuration
 
-```bash
-$ mkdir microblog
-$ cd microblog
-```
+**Clone the repository from Github by running this command:**
+```git clone https://github.com/Lamia7/microblog```
 
-## Créer environnement virtuel et l'activer depuis le répertoire
+**Execute with a virtual environment:**
 
-```bash
-$ python3.7 -m venv venv
-```
+Create a virtual environment: `python3.7 -m venv venv` <br>
+Activate the virtual environment: `source venv/bin/activate` <br>
+Install all the libraries through the requirements file: `pip3 install -r requirements.txt` <br>
+Run the application: `python3 microblog/microblog.py`
 
-```bash
-$ source venv/bin/activate
-(venv) microblog$ _
-```
-
-## Installer flask
-
-```bash
-microblog$ pip3 install flask
-```
-
+(To deactivate the virtual environment, run this command: `deactivate`)
